@@ -6,18 +6,9 @@ from math import cos as Cos
 
 
 class Calculator(Frame):
-    """
-    An example of a calculator app developed using the 
-    Tkinter GUI.
-    """
-
     def __init__(self, master):
-        """
-        Initializes the frame.
-        :param master: root.Tk()
-        """
         Frame.__init__(self, master)
-        self.entry = Entry(master, width=40, length= 40, font=("Arial",25))
+        self.entry = Entry(master, width=40, font=("Arial",25))
         self.entry.grid(row=0, column=0, columnspan=6, sticky="w")
         self.entry.focus_set()
         self.entry.configure(state="disabled", disabledbackground="black", disabledforeground="black")
