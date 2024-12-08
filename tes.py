@@ -159,6 +159,6 @@ class Calculator(Frame):
         self.sqr_bttn.grid(row=3, column=5)
 
 root = Tk()
-#root.geometry()
+root.geometry()
 root.title("Exciting GUI Calculator")
 app = Calculator(root)
