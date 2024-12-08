@@ -4,6 +4,7 @@ from math import sin as Sin
 from math import tan as Tan
 from math import cos as Cos
 
+match_color = input("What color: ")
 
 class Calculator(Frame):
     def __init__(self, master):
@@ -11,7 +12,7 @@ class Calculator(Frame):
         self.entry = Entry(master, width=40, font=("Arial",25))
         self.entry.grid(row=0, column=0, columnspan=6, sticky="w")
         self.entry.focus_set()
-        self.entry.configure(state="disabled", disabledbackground="black", disabledforeground="black")
+        self.entry.configure(state="disabled", disabledbackground= match_color, disabledforeground="black")
         self.create_widgets()
         self.bind_buttons(master)
         self.grid()
