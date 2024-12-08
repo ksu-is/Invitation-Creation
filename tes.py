@@ -7,6 +7,8 @@ from math import cos as Cos
 match_color = input("What color: ")
 
 class Calculator(Frame):
+    
+    #frame 
     def __init__(self, master):
         Frame.__init__(self, master)
         self.entry = Entry(master, width=40, font=("Arial",25))
@@ -16,7 +18,8 @@ class Calculator(Frame):
         self.create_widgets()
         self.bind_buttons(master)
         self.grid()
-        
+    
+    #charasteristics     
     def add_chr(self, char, btn=None):
         self.entry.configure(state="normal")
         self.flash(btn) # Flash a button correspond to keystroke
@@ -25,42 +28,8 @@ class Calculator(Frame):
         self.entry.insert(END, char)
         self.entry.configure(state="disabled")
 
-    def calculate(self):
-        """
-        Changes the operation symbols to their mathematical representation used in 
-        the eval() method.
-        :return: None
-        """
-        self.entry.configure(state="normal")
-        e = self.entry.get()
-        e = e.replace("√","sqr")
-        e = e.replace("×", "*")
-        e = e.replace("²", "**2")
-        e = e.replace("^", "**")
-        e = e.replace("÷", "/")
-        e = e.replace("sin", "Sin")
-        e = e.replace("cos", "Cos")
-        e = e.replace("tan", "Tan")
-
-        try:
-            ans = eval(e)
-        except Exception as ex:
-            self.entry.delete(0,END)
-            self.entry.insert(0, "Invalid Input")
-        else:
-            self.entry.delete(0,END)
-            if len(str(ans)) > 20: # Alleviates problem of large numbers
-                self.entry.insert(0, '{:.10e}'.format(ans))
-            else:
-                self.entry.insert(0, ans)
-        self.entry.configure(state="disabled")
-
     def flash(self,btn):
-        """
-        Flashes a corresponding button when key is pressed.
-        :param btn: button
-        :return: None
-        """
+       
         if btn != None:
             btn.config(bg="yellow")
             if btn == self.c_bttn:
@@ -189,8 +158,7 @@ class Calculator(Frame):
         self.sqr_bttn = Button(self, text="^", width=9, height=3, command=lambda: self.add_chr('^'))
         self.sqr_bttn.grid(row=3, column=5)
 
-root = Tk()
-root.geometry()
+#root = Tk()
+#root.geometry()
 root.title("Exciting GUI Calculator")
 app = Calculator(root)
-root.mainloop()
