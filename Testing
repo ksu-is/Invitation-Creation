@@ -25,7 +25,7 @@ class Calculator(Frame):
         self.bind_buttons(master)
         self.grid()
         
-    '''def add_chr(self, char, btn=None):
+    def add_chr(self, char, btn=None):
         """
         Concatenates a character passed from a button press (or key type) 
         to a string.
@@ -53,7 +53,7 @@ class Calculator(Frame):
             self.entry.insert(0,text)
         else:
             self.entry.delete(0, END)
-        self.entry.configure(state="disabled")'''
+        self.entry.configure(state="disabled")
 
     def clear_all(self):
         """
