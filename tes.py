@@ -158,7 +158,7 @@ class Calculator(Frame):
         self.sqr_bttn = Button(self, text="^", width=9, height=3, command=lambda: self.add_chr('^'))
         self.sqr_bttn.grid(row=3, column=5)
 
-#root = Tk()
+root = Tk()
 #root.geometry()
 root.title("Exciting GUI Calculator")
 app = Calculator(root)
