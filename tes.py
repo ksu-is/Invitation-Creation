@@ -73,7 +73,7 @@ class Calculator(Frame):
         master.bind("+", lambda event, char="+", btn=self.add_bttn: self.add_chr(char, btn))
         master.bind("(", lambda event, char="(", btn=self.lpar_bttn: self.add_chr(char, btn))
         master.bind(")", lambda event, char=")", btn=self.rpar_bttn: self.add_chr(char, btn))
-        master.bind("c", lambda event, btn=self.ac_bttn: self.flash(btn), self.clear_all)
+        #master.bind("c", lambda event, btn=self.ac_bttn: self.flash(btn), self.clear_all)
     
     def create_widgets(self):
         """
