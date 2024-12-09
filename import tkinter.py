@@ -17,6 +17,7 @@ class Calculator(Frame):
         
     def add_chr(self, char, btn=None):
         """
+        dont think i need
         Concatenates a character passed from a button press (or key type) 
         to a string.
         :param char: string to add passed from a button
