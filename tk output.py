@@ -6,7 +6,7 @@ def invitation():
     #root is tk window
     root = tk.Tk() #initializes the window 
     root.title("Your letter: ")
-    root.geometry("50x50")
+    root.geometry("5000x5000")
     root.configure(bg=bg_color)
 
 #color_input = tk.Entry(root, width=20)
