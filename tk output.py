@@ -12,7 +12,7 @@ def invitation():
     root.configure(bg=bg_color)
    
     #put ontop of the window
-    label = tk.label(root, text=name, font=("Helvetica", 18), bg=bg_color, fg="black")
+    Label = tk.Label(root, text=name, font=("Helvetica", 18), bg=bg_color, fg="black")
     label.grid(row=0, column=1, pady=10, padx=10) #pady/x is padding 
     
     #The grid 
