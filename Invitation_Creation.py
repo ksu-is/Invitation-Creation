@@ -18,18 +18,21 @@ def invitation():
    
     #put ontop of the window
     Label = tk.Label(root, text=title_iv, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=0, column=5, pady=10, padx=10) #pady/x is padding 
+    Label.grid(row=0, column=1, pady=10, padx=10) #pady/x is padding 
     
     Label = tk.Label(root, text="To: "+ iv_to, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=27, column=35, pady=10, padx=10) 
+    Label.grid(row=1, column=1, pady=10, padx=10) 
     
     Label = tk.Label(root, text=body, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=3, column=1, pady=10, padx=10) 
+    Label.grid(row=2, column=2, pady=10, padx=10) 
     
-    '''#The grid 
-    root.grid_columnconfigure(0, weight=1) #center the columns 
+    #The grid 
+    root.grid_columnconfigure(0, weight=1) #columns 
     root.grid_columnconfigure(1, weight=1)
-    root.grid_columnconfigure(2, weight=1)'''
+    root.grid_columnconfigure(2, weight=1)
+    root.grid_rowconfigure(0, weight=1) #rows 
+    root.grid_rowconfigure(1, weight=1)
+    root.grid_rowconfigure(2, weight=1)
     
     #do i need?
     root.mainloop()
