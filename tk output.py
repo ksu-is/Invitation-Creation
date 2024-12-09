@@ -3,12 +3,13 @@ from tkinter import messagebox
 
 def invitation():
     bg_color = input("What color do you want on the background: ")
-    
-    root = tk.Tk()
+    #root is tk window
+    root = tk.Tk() #initializes the window 
     root.title("Your letter: ")
-    
+    root.geometry("50x50")
     root.configure(bg=bg_color)
 
 #color_input = tk.Entry(root, width=20)
     root.mainloop()
+    
 invitation()
