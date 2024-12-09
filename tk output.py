@@ -7,7 +7,7 @@ def invitation():
     root = tk.Tk() #initializes the window 
     root.title("Your letter: ")
     #50x50 ellipsis 5000x5000 full screen 
-    root.geometry("500x700")
+    root.geometry("700x500")
     root.configure(bg=bg_color)
 
 #color_input = tk.Entry(root, width=20)
