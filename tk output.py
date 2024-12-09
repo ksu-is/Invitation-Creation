@@ -9,3 +9,4 @@ root.title("Your letter: ")
 
 #color_input = tk.Entry(root, width=20)
 
+invitation()
