@@ -21,7 +21,7 @@ def invitation():
     Label.grid(row=0, column=5, pady=10, padx=10) #pady/x is padding 
     
     Label = tk.Label(root, text="To: "+ iv_to, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=27, column=7, pady=10, padx=10) 
+    Label.grid(row=27, column=35, pady=10, padx=10) 
     
     Label = tk.Label(root, text=body, font=("Helvetica", 18), bg=bg_color, fg="black")
     Label.grid(row=3, column=1, pady=10, padx=10) 
