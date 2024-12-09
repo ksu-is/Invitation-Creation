@@ -13,7 +13,7 @@ def invitation():
     #do i need?
     root.mainloop()
     #put ontop of the window
-    labe1 = tk.labe1(root, text=name, font=("Helvetica", 18), bg=bg_color)
+    labe1 = tk.labe1(root, text=name, font=("Helvetica", 18), bg="black")
     labe1.pack(side="top", pady=10)
     
 invitation()
