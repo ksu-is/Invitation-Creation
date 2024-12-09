@@ -18,13 +18,13 @@ def invitation():
    
     #put ontop of the window
     Label = tk.Label(root, text=title_iv, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=0, column=3, pady=10, padx=10) #pady/x is padding 
+    Label.grid(row=0, column=5, pady=10, padx=10) #pady/x is padding 
     
     Label = tk.Label(root, text=iv_to, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=1, column=1, pady=10, padx=10) 
+    Label.grid(row=7, column=7, pady=10, padx=10) 
     
     Label = tk.Label(root, text=body, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=0, column=1, pady=10, padx=10) 
+    Label.grid(row=3, column=1, pady=10, padx=10) 
     
     '''#The grid 
     root.grid_columnconfigure(0, weight=1) #center the columns 
