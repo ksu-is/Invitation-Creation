@@ -13,7 +13,12 @@ def invitation():
     #do i need?
     root.mainloop()
     #put ontop of the window
-    labe1 = tk.labe1(root, text=name, font=("Helvetica", 18), bg="black")
-    labe1.pack(side="top", pady=10)
+    labe1 = tk.labe1(root, text=name, font=("Helvetica", 18), bg=bg_color, fg="black")
+    labe1.grid(row=0, column=1, pady=10, padx=10) #pady/x is padding 
+    
+    #The grid 
+    root.grid_columnconfigure(0, weight=1) #center the columns 
+    root.grid_columnconfigure(1, weight=1)
+    root.grid_columnconfigure(2, weight=1)
     
 invitation()
