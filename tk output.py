@@ -10,5 +10,5 @@ def invitation():
     root.configure(bg=bg_color)
 
 #color_input = tk.Entry(root, width=20)
-
+    root.mainloop()
 invitation()
