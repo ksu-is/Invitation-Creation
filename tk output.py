@@ -6,7 +6,7 @@ def invitation():
     name = input("What is your name?")
     #root is tk window
     root = tk.Tk() #initializes the window 
-    root.title("This invitation is from",name)
+    root.title("This invitation is from" + name)
     #50x50 ellipsis 5000x5000 full screen 
     root.geometry("700x500")
     root.configure(bg=bg_color)
