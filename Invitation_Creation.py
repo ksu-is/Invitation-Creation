@@ -24,7 +24,7 @@ def invitation():
     Label.grid(row=6, column=6, pady=10, padx=10) 
     
     Label = tk.Label(root, text=body, font=("Helvetica", 18), bg=bg_color, fg="black")
-    Label.grid(row=1, column=1, pady=10, padx=10) 
+    Label.grid(row=1, column=1, pady=10, padx=5) 
     
     #The grid 
     root.grid_columnconfigure(0, weight=1) #columns 
